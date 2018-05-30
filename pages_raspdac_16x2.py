@@ -30,7 +30,7 @@ WIDGETS = {
 	'bitdepth': { 'type':'text', 'format':'{0}', 'variables':['bitdepth'], 'font':'small','varwidth':True}, 
 	'ip': { 'type':'text', 'format':'IP :\n{0}', 'variables':['ip'], 'font':'small', 'varwidth':True, 'just':'center', 'size':(65,16) },
 	'elapsed_formatted': { 'type':'text', 'format':'{0}', 'variables':['elapsed_formatted'], 'font':'small', 'varwidth':True, },
-	'time_formatted': { 'type':'text', 'format':'{0}', 'variables':['time_formatted'], 'font':'large', 'just':'right', 'varwidth':True, 'size':(50,16) },
+	'time_formatted': { 'type':'text', 'format':'{0}', 'variables':['localtime|strftime+%H:%M'], 'font':'large', 'just':'right', 'varwidth':True, 'size':(50,16) },
 	'radioAP': { 'type':'text', 'format':"WEB RADIO", 'font':'small', 'varwidth':True, 'size':(45,8), 'just':'left' },
 	'position': { 'type':'text', 'format':'{0}', 'variables':['position'], 'font':'small', 'varwidth':True, },
 	'nowplaying': { 'type':'text', 'format':'{0}', 'variables':['actPlayer|upper'], 'font':'tiny', 'varwidth':True},
